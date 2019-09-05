@@ -9,7 +9,7 @@ third_number = 1
 sum_numbers=1
 
 for i in range(0,n):
-    print(sum_numbers,end = ', ')
+    print(sum_numbers)
     sum_numbers = first_number + second_number + third_number
     #move the numbers to the right with the sum as the new end number
     first_number = second_number
