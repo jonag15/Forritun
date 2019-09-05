@@ -8,6 +8,17 @@ second_number = 0
 third_number = 1
 
 for i in range(0,n):
+    #The first move to the right gives the wrong end number (0,1,1 insted of 0,1,2) so a special case is made for the first move
+    if i <1:
+        sum_numbers = first_number + second_number + third_number
+        print(sum_numbers,end = ', ')
+    
+        #move the numbers to the right and add 2 as the end number
+        first_number = second_number
+        second_number = third_number
+        third_number = 2
+        continue
+    #the rest of the loop goes on as normal
     sum_numbers = first_number + second_number + third_number
     print(sum_numbers,end = ', ')
     
