@@ -8,3 +8,11 @@ second_number = 0
 third_number = 1
 
 for i in range(0,n)
+    sum_numbers = first_number + second_number + third number
+    print(sum_numbers,end = ', ')
+    
+    #move the numbers to the right with the sum as the new end number
+    first_number = second_number
+    second_number = third_number
+    third_number = sum_numbers
+    
